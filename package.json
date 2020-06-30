@@ -1,0 +1,17 @@
+{
+  "name": "comparison_of_python_and_ts_functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dnaviz.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dnaviz": "^1.0.0-0"
+  },
+  "dependencies": {
+    "simple-statistics": "^7.1.0"
+  }
+}
