@@ -41,13 +41,3 @@ while k < 1000:
 print('squiggle 1,000,000 median: ' + str(statistics.median(times_squ_6)) + 's')
 print('squiggle 1,000,000 mean: ' + str(statistics.mean(times_squ_6)) + 's')
 print('squiggle 1,000,000 standard deviation: ' + str(statistics.stdev(times_squ_6)) + 's')
-
-# squiggle 10,000 median: 0.010972261428833008s
-# squiggle 10,000 mean: 0.012124280691146851s
-# squiggle 10,000 standard deviation: 0.004075468806187403s
-# squiggle 100,000 median: 0.07579851150512695s
-# squiggle 100,000 mean: 0.0793911316394806s
-# squiggle 100,000 standard deviation: 0.013309501421992454s
-# squiggle 1,000,000 median: 0.7789148092269897s
-# squiggle 1,000,000 mean: 0.8052034337520599s
-# squiggle 1,000,000 standard deviation: 0.10336966885599848s
