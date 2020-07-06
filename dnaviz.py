@@ -1,7 +1,14 @@
 from squiggle import transform
-from common import E_4, E_5, E_6
 import time
 import statistics
+import string
+import random
+def randomSeq(size, chars):
+    return ''.join(random.choice(chars) for _ in range(size))
+
+E_4 = randomSeq(10000, 'ATGC')
+E_5 = randomSeq(100000, 'ATGC')
+E_6 = randomSeq(1000000, 'ATGC')
 
 methods = ['squiggle', 'yau', 'yau-bp', 'gates', 'randic', 'qi']
 

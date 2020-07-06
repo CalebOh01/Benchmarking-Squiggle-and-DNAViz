@@ -1,7 +1,17 @@
-import * as seq from "./common";
 import * as dna from "dnaviz";
 import * as ss from "simple-statistics";
-
+function randomSeq(length) {
+  var result = '';
+  var characters = 'ATGC';
+  var charactersLength = characters.length;
+  for ( var i = 0; i < length; i++ ) {
+     result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+}
+const E_4 = randomSeq(10000)
+const E_5 = randomSeq(100000)
+const E_6 = randomSeq(1000000)
 // array of all visualization methods so each test can iterate over each
 const methods = [
   dna.squiggle,
@@ -18,7 +28,7 @@ for (let i = 0; i < methods.length; i++) {
   const times_squ_4 = [];
   while (j < 1000) {
     let then = new Date();
-    methods[i](seq.E_4);
+    methods[i](E_4);
     let now = new Date();
     times_squ_4.push((now.getTime() - then.getTime()) / 1000);
     j++;
@@ -36,7 +46,7 @@ for (let i = 0; i < methods.length; i++) {
   const times_squ_5 = [];
   while (j < 1000) {
     let then = new Date();
-    methods[i](seq.E_5);
+    methods[i](E_5);
     let now = new Date();
     times_squ_5.push((now.getTime() - then.getTime()) / 1000);
     j++;
@@ -54,7 +64,7 @@ for (let i = 0; i < methods.length; i++) {
   const times_squ_6 = [];
   while (j < 1000) {
     let then = new Date();
-    methods[i](seq.E_6);
+    methods[i](E_6);
     let now = new Date();
     times_squ_6.push((now.getTime() - then.getTime()) / 1000);
     j++;
